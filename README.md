@@ -34,13 +34,13 @@ Deep technical knowledge in documenting and integrating with:
 - **Content:** Creating technical walkthroughs and DevOps guides on YouTube.
 
 ## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=memestageceo&show_icons=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=memestageceo&layout=compact)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=memestageceo&show_icons=true)](https://github.com/memestageceo)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=memestageceo&layout=compact)](https://github.com/memestageceo?tab=repositories)
 
 ## 🧠 Philosophy
 Documentation is not an afterthought; it is a core feature of the product. Clear docs make software easier to adopt, integrate, and maintain.
 
 ## 🔗 Connect With Me
-- **GitHub:** [github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- **YouTube:** [Your Channel Name]
+- **GitHub:** [github.com/memestageceo](https://github.com/memestageceo)
+- **YouTube:** [youtube.com/@memestagestartup](https://www.youtube.com/@memestagestartup)
 - **Portfolio:** Check my pinned repositories for featured DocEng projects.
