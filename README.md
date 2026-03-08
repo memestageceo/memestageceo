@@ -1,3 +1,5 @@
+![Banner](https://github.com/user-attachments/assets/388b3d6d-c1f1-4897-96e0-5d5ba3446eff)
+
 # Aditya
 
 **Technical Writer • Documentation Engineer • DevOps Enthusiast**
@@ -32,10 +34,6 @@ Deep technical knowledge in documenting and integrating with:
 - **Current Focus:** Deep-diving into Kubernetes internals and AWS Solutions Architecture.
 - **Side Projects:** Developing OpenAPI documentation portals and CLI workflow tutorials.
 - **Content:** Creating technical walkthroughs and DevOps guides on YouTube.
-
-## 📊 GitHub Stats
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=memestageceo&show_icons=true)](https://github.com/memestageceo)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=memestageceo&layout=compact)](https://github.com/memestageceo?tab=repositories)
 
 ## 🧠 Philosophy
 Documentation is not an afterthought; it is a core feature of the product. Clear docs make software easier to adopt, integrate, and maintain.
