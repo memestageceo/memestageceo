@@ -1,50 +1,185 @@
-![Banner](https://github.com/user-attachments/assets/388b3d6d-c1f1-4897-96e0-5d5ba3446eff)
+<p align="center">
+  <img src="assets/pipeline.svg" width="100%"
+       alt="Documentation pipeline: author, validate, assist, generate, publish">
+</p>
 
-# Aditya
+<h1 align="center">Aditya Raj</h1>
 
-**Technical Writer • Documentation Engineer • DevOps Enthusiast**
+<p align="center">
+  <strong>Technical Writer</strong> · <strong>Documentation Engineer</strong> · <strong>DevOps</strong>
+</p>
 
-I bridge the gap between complex code and developer success. My focus is improving **Developer Experience (DX)** through automated documentation pipelines, robust API references, and technical storytelling.
+<p align="center">
+  <a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
+    <img alt="CKA - Certified Kubernetes Administrator (verify on Credly)" src="https://img.shields.io/badge/CKA-Certified%20Kubernetes%20Administrator-326CE5?style=flat-square&logo=kubernetes&logoColor=white">
+  </a>
+  <a href="https://www.youtube.com/@memestagestartup">
+    <img alt="YouTube - @memestagestartup, deployment walkthroughs" src="https://img.shields.io/badge/YouTube-@memestagestartup-FF0000?style=flat-square&logo=youtube&logoColor=white">
+  </a>
+  <a href="https://www.youtube.com/@atechyap/videos">
+    <img alt="YouTube - @atechyap, DevOps and AI tutorials" src="https://img.shields.io/badge/YouTube-@atechyap-FF0000?style=flat-square&logo=youtube&logoColor=white">
+  </a>
+  <a href="https://github.com/memestageceo">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/memestageceo?style=flat-square&logo=github&label=Follow">
+  </a>
+</p>
 
-<a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url](https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
-  <img src="https://raw.githubusercontent.com/memestageceo/memestageceo/main/assets/cka.png"
-       alt="Certified Kubernetes Administrator (CKA)"
-       width="150">
-</a>
+I treat documentation as part of the product. That means shipping docs the same way we ship
+code - versioned in the repo, validated in CI, and published automatically - so that developers
+can adopt, integrate, and operate software without guesswork.
 
-## 🚀 Core Expertise
+---
 
-### Documentation Engineering
-- **Architecture:** Designing scalable doc sets using Docusaurus and MkDocs.
-- **API Strategy:** High-fidelity references using **OpenAPI (Swagger)**, Redoc, and Scalar.
-- **Testing & Mocking:** Ensuring accuracy with Schemathesis and Prism.
-- **Docs-as-Code:** Building CI/CD automation pipelines via GitHub Actions.
+## 🧭 At a glance
 
-### DevOps & Infrastructure
-- **Orchestration:** Managing workloads with **Kubernetes**, Helm, and Docker.
-- **Cloud:** Transitioning into AWS architecture and cloud-native workflows.
-- **Automation:** Writing custom Bash scripts and GitHub Actions to eliminate manual toil.
+|  |  |
+| :-- | :-- |
+| 🎯 **Focus** | Developer Experience (DX) through documentation |
+| 📚 **Day to day** | Owning documentation for enterprise software, end to end |
+| ⚙️ **Automation** | Docs-as-code CI/CD - validate, generate, and publish on every merge |
+| ☸️ **Infrastructure** | Kubernetes, OpenShift, Helm, AWS / Azure / GCP |
+| 🎥 **Content** | Two YouTube channels - deployment walkthroughs, and DevOps / AI tutorials |
 
-## 🛠 Tech Stack
-- **Languages:** JavaScript, TypeScript, Bash
-- **DevOps:** Kubernetes, Docker, Helm, GitHub Actions
-- **Editor:** Neovim (Personalized LSP/YAML workflow)
-- **API/Docs:** OpenAPI, Docusaurus, MkDocs, Schemathesis, Prism
+---
 
-## 🏢 Platform Experience
-Deep technical knowledge in documenting and integrating with:
-- **GIS Ecosystems:** VertiGIS Networks Suite, Studio Web, Workflows, and Attribute Forms.
-- **Financial APIs:** QuickBooks, Xero.
+## 📚 Documentation engineering
 
-## 🏗 What I’m Building & Learning
-- **Current Focus:** Deep-diving into Kubernetes internals and AWS Solutions Architecture.
-- **Side Projects:** Developing OpenAPI documentation portals and CLI workflow tutorials.
-- **Content:** Creating technical walkthroughs and DevOps guides on YouTube.
+I own documentation for enterprise software from information architecture through release -
+the full lifecycle, not just the writing.
 
-## 🧠 Philosophy
-Documentation is not an afterthought; it is a core feature of the product. Clear docs make software easier to adopt, integrate, and maintain.
+- **Doc set architecture** - scalable, versioned documentation with **Docusaurus** and **MkDocs**.
+- **API references** - high-fidelity specs with **OpenAPI (Swagger)**, rendered via **Redoc** and **Scalar**.
+- **Release documentation** - release notes, upgrade paths, and migration guides that survive contact with real customers.
+- **Docs-as-code** - docs live beside the source, move through pull requests, and get reviewed like code.
 
-## 🔗 Connect With Me
-- **GitHub:** [github.com/memestageceo](https://github.com/memestageceo)
-- **YouTube:** [youtube.com/@memestagestartup](https://www.youtube.com/@memestagestartup)
-- **Portfolio:** Check my pinned repositories for featured DocEng projects.
+### A merge, end to end
+
+What actually happens between a developer opening a pull request and a customer reading the page:
+
+| | Stage | What happens |
+| :--: | :-- | :-- |
+| <img src="assets/logos/git.svg" height="24" alt=""> | **Author** | A change lands as Markdown/MDX beside the source it documents, and goes through review like any other pull request. |
+| <img src="assets/logos/playwright.svg" height="24" alt=""> | **Validate** | CI checks links, style rules, and drift against the API spec - contract tests with Schemathesis, mocked examples with Prism. |
+| <img src="assets/logos/claude.svg" height="24" alt=""> | **Assist** | Agents draft updates from the code diff, flag pages the change made stale, and review the wording against the style guide. |
+| <img src="assets/logos/helm.svg" height="24" alt=""> | **Generate** | Reference content is regenerated, never hand-copied - helm-docs for chart values, OpenAPI for endpoints. |
+| <img src="assets/logos/github-actions.svg" height="24" alt=""> | **Publish** | On merge, the site builds and deploys, and chart docs ship to Artifact Hub. |
+
+The point is simple: if documentation can go out of date silently, it will. This pipeline makes it fail loudly instead.
+
+---
+
+## ☸️ Cloud, Kubernetes & Helm
+
+- **Deployment documentation** for **AWS**, **Azure**, and **GCP** - install, configure, scale, troubleshoot.
+- **Cluster platforms** - deployment and operations guides for **Kubernetes** and **OpenShift**.
+- **Helm** - chart documentation with values references generated by **helm-docs** and published to **Artifact Hub**.
+- **Infrastructure as code** - **Terraform** for reproducible environments the docs can actually be tested against.
+- **Automation** - GitHub Actions, Jenkins, Azure DevOps, and Bash to remove the manual steps between a merge and a published page.
+
+---
+
+## 🎓 Certification
+
+<p align="center">
+  <a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
+    <img src="assets/logos/cka.png" width="130" alt="CKA - Certified Kubernetes Administrator">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Certified Kubernetes Administrator (CKA)</strong><br>
+  Cloud Native Computing Foundation · Issued August 2026 · Certificate ID <code>LF-wuxaw08654</code><br>
+  <a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url"><strong>Verify on Credly →</strong></a> ·
+  <a href="assets/cka-certificate.png">View certificate</a>
+</p>
+
+---
+
+## 🎥 Video & developer education
+
+Some things are faster to show than to describe. Alongside written docs I record walkthroughs and
+tutorials, so teams can watch the happy path once before running it themselves. I run two channels:
+
+- **[@memestagestartup](https://www.youtube.com/@memestagestartup)** - deployment walkthroughs:
+  cluster deployments, Helm releases, and DevOps workflows, start to finish.
+- **[@atechyap](https://www.youtube.com/@atechyap/videos)** - tutorials on DevOps, AI, and recent
+  tech: the tooling as it lands, explained hands-on.
+
+Recorded, edited, and published end to end, then measured - so the next video answers the question
+the last one left open.
+
+<p align="center">
+  <a href="https://www.youtube.com/@memestagestartup">
+    <img src="assets/logos/youtube.svg" height="30" alt="YouTube">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/davinci-resolve.svg" height="30" alt="DaVinci Resolve">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/google-analytics.svg" height="30" alt="Google Analytics">
+</p>
+
+---
+
+## 🧰 Toolbox
+
+<p align="center">
+  <img src="assets/logos/docusaurus.svg" height="34" alt="Docusaurus">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/postman.svg" height="34" alt="Postman">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/playwright.svg" height="34" alt="Playwright">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/helm.svg" height="34" alt="Helm">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/terraform.svg" height="34" alt="Terraform">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/aws.svg" height="34" alt="AWS">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/gcp.svg" height="34" alt="Google Cloud">
+</p>
+
+<p align="center">
+  <img src="assets/logos/github-actions.svg" height="34" alt="GitHub Actions">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/jenkins.svg" height="34" alt="Jenkins">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/azure-devops.svg" height="34" alt="Azure DevOps">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/git.svg" height="34" alt="Git">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/bash.svg" height="34" alt="Bash">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/claude.svg" height="34" alt="Claude">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/chatgpt.svg" height="34" alt="ChatGPT">
+</p>
+
+| Area | Tools |
+| :-- | :-- |
+| **Docs & sites** | Docusaurus, MkDocs, Markdown / MDX |
+| **API docs** | OpenAPI (Swagger), Redoc, Scalar, Postman, Schemathesis, Prism |
+| **Kubernetes** | Kubernetes, OpenShift, Helm, helm-docs, Artifact Hub, Docker |
+| **Cloud & IaC** | AWS, Azure, GCP, Terraform |
+| **CI/CD** | GitHub Actions, Jenkins, Azure DevOps, Git, Bash |
+| **AI in the pipeline** | Claude, ChatGPT - agents that review, not just generate |
+| **Testing** | Playwright, Schemathesis, link and style checks |
+| **Video** | DaVinci Resolve, YouTube, Google Analytics |
+| **Languages** | JavaScript, TypeScript, Bash, YAML |
+| **Editor** | Neovim - custom LSP and YAML workflow |
+
+---
+
+## 🏗 Currently
+
+- Going deeper into **Kubernetes internals** and **AWS Solutions Architecture**.
+- Building OpenAPI documentation portals and CLI workflow tutorials.
+- Expanding the use of agents in documentation pipelines - reviewing, not just generating.
+
+---
+
+## 🔗 Connect
+
+- **YouTube** - [@memestagestartup](https://www.youtube.com/@memestagestartup) (deployment walkthroughs) · [@atechyap](https://www.youtube.com/@atechyap/videos) (DevOps / AI tutorials)
+- **GitHub** - [@memestageceo](https://github.com/memestageceo)
+- **Credly** - [CKA verification](https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url)
+- **Work** - pinned repositories below cover the featured documentation-engineering projects.
