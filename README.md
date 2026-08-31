@@ -52,19 +52,19 @@ the full lifecycle, not just the writing.
 - **Release documentation** - release notes, upgrade paths, and migration guides that survive contact with real customers.
 - **Docs-as-code** - docs live beside the source, move through pull requests, and get reviewed like code.
 
-### The pipeline
+### A merge, end to end
 
-The stages above, in detail - documentation runs through CI the same way an application does:
+What actually happens between a developer opening a pull request and a customer reading the page:
 
 | | Stage | What happens |
 | :--: | :-- | :-- |
-| <img src="assets/logos/docusaurus.svg" height="22" alt=""> <img src="assets/logos/git.svg" height="22" alt=""> | **Author** | Markdown/MDX in the product repo, reviewed through pull requests. |
-| <img src="assets/logos/playwright.svg" height="22" alt=""> <img src="assets/logos/postman.svg" height="22" alt=""> | **Validate** | Every PR is checked for broken links, style violations, and drift from the API spec - contract testing with **Schemathesis**, mocked examples with **Prism**. |
-| <img src="assets/logos/claude.svg" height="22" alt=""> <img src="assets/logos/chatgpt.svg" height="22" alt=""> | **Assist** | AI agents run in the pipeline to draft updates from code diffs, flag pages that have gone stale, and review changes against the style guide. |
-| <img src="assets/logos/helm.svg" height="22" alt=""> | **Generate** | Reference content is generated, never hand-copied - **helm-docs** for chart values, OpenAPI for endpoints. |
-| <img src="assets/logos/github-actions.svg" height="22" alt=""> <img src="assets/logos/jenkins.svg" height="22" alt=""> | **Publish** | On merge, sites build and deploy, and chart docs ship to **Artifact Hub**. |
+| <img src="assets/logos/git.svg" height="24" alt=""> | **Author** | A change lands as Markdown/MDX beside the source it documents, and goes through review like any other pull request. |
+| <img src="assets/logos/playwright.svg" height="24" alt=""> | **Validate** | CI checks links, style rules, and drift against the API spec - contract tests with Schemathesis, mocked examples with Prism. |
+| <img src="assets/logos/claude.svg" height="24" alt=""> | **Assist** | Agents draft updates from the code diff, flag pages the change made stale, and review the wording against the style guide. |
+| <img src="assets/logos/helm.svg" height="24" alt=""> | **Generate** | Reference content is regenerated, never hand-copied - helm-docs for chart values, OpenAPI for endpoints. |
+| <img src="assets/logos/github-actions.svg" height="24" alt=""> | **Publish** | On merge, the site builds and deploys, and chart docs ship to Artifact Hub. |
 
-The point is simple: if documentation can go out of date silently, it will. The pipeline makes it fail loudly instead.
+The point is simple: if documentation can go out of date silently, it will. This pipeline makes it fail loudly instead.
 
 ---
 
@@ -97,46 +97,75 @@ The point is simple: if documentation can go out of date silently, it will. The 
 
 ## 🎥 Video & developer education
 
-Some things are faster to show than to describe. Alongside written docs I produce screen-recorded
-walkthroughs and tutorials, so teams can watch the happy path once before running it themselves.
-I run two channels:
+Some things are faster to show than to describe. Alongside written docs I record walkthroughs and
+tutorials, so teams can watch the happy path once before running it themselves. I run two channels:
 
-| | Channel | What's on it |
-| :--: | :-- | :-- |
-| <img src="assets/logos/youtube.svg" height="20" alt=""> | **[@memestagestartup](https://www.youtube.com/@memestagestartup)** | Deployment walkthroughs - cluster deployments, Helm releases, and DevOps workflows, start to finish. |
-| <img src="assets/logos/youtube.svg" height="20" alt=""> | **[@atechyap](https://www.youtube.com/@atechyap/videos)** | Tutorials on DevOps, AI, and recent tech - the tooling as it lands, explained hands-on. |
+- **[@memestagestartup](https://www.youtube.com/@memestagestartup)** - deployment walkthroughs:
+  cluster deployments, Helm releases, and DevOps workflows, start to finish.
+- **[@atechyap](https://www.youtube.com/@atechyap/videos)** - tutorials on DevOps, AI, and recent
+  tech: the tooling as it lands, explained hands-on.
 
-Recorded and edited end to end, then measured, so the next video answers the question the last one left open.
+Recorded, edited, and published end to end, then measured - so the next video answers the question
+the last one left open.
 
 <p align="center">
-  <img src="assets/logos/davinci-resolve.svg" height="26" alt="DaVinci Resolve">
-  &nbsp;&nbsp;
-  <img src="assets/logos/google-analytics.svg" height="26" alt="Google Analytics">
+  <a href="https://www.youtube.com/@memestagestartup">
+    <img src="assets/logos/youtube.svg" height="30" alt="YouTube">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/davinci-resolve.svg" height="30" alt="DaVinci Resolve">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/google-analytics.svg" height="30" alt="Google Analytics">
 </p>
 
 ---
 
 ## 🧰 Toolbox
 
+<p align="center">
+  <img src="assets/logos/docusaurus.svg" height="34" alt="Docusaurus">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/postman.svg" height="34" alt="Postman">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/playwright.svg" height="34" alt="Playwright">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/helm.svg" height="34" alt="Helm">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/terraform.svg" height="34" alt="Terraform">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/aws.svg" height="34" alt="AWS">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/gcp.svg" height="34" alt="Google Cloud">
+</p>
+
+<p align="center">
+  <img src="assets/logos/github-actions.svg" height="34" alt="GitHub Actions">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/jenkins.svg" height="34" alt="Jenkins">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/azure-devops.svg" height="34" alt="Azure DevOps">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/git.svg" height="34" alt="Git">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/bash.svg" height="34" alt="Bash">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/claude.svg" height="34" alt="Claude">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logos/chatgpt.svg" height="34" alt="ChatGPT">
+</p>
+
 | Area | Tools |
 | :-- | :-- |
-| **Docs & sites** | <img src="assets/logos/docusaurus.svg" height="18" alt=""> Docusaurus · MkDocs · Markdown / MDX |
-| **API docs** | <img src="assets/logos/postman.svg" height="18" alt=""> Postman · OpenAPI (Swagger) · Redoc · Scalar · Schemathesis · Prism |
-| **Kubernetes** | Kubernetes · OpenShift · <img src="assets/logos/helm.svg" height="18" alt=""> Helm · helm-docs · Artifact Hub · Docker |
-| **Cloud** | <img src="assets/logos/aws.svg" height="18" alt=""> AWS · Azure · <img src="assets/logos/gcp.svg" height="18" alt=""> GCP · <img src="assets/logos/terraform.svg" height="18" alt=""> Terraform |
-| **CI/CD** | <img src="assets/logos/github-actions.svg" height="18" alt=""> GitHub Actions · <img src="assets/logos/jenkins.svg" height="18" alt=""> Jenkins · <img src="assets/logos/azure-devops.svg" height="18" alt=""> Azure DevOps · <img src="assets/logos/git.svg" height="18" alt=""> Git · <img src="assets/logos/bash.svg" height="18" alt=""> Bash |
-| **AI in the pipeline** | <img src="assets/logos/claude.svg" height="18" alt=""> Claude · <img src="assets/logos/chatgpt.svg" height="18" alt=""> ChatGPT · agents that review, not just generate |
-| **Testing** | <img src="assets/logos/playwright.svg" height="18" alt=""> Playwright · Schemathesis · link and style checks |
-| **Video & insight** | <img src="assets/logos/davinci-resolve.svg" height="18" alt=""> DaVinci Resolve · <img src="assets/logos/youtube.svg" height="18" alt=""> YouTube · <img src="assets/logos/google-analytics.svg" height="18" alt=""> Google Analytics |
-| **Languages** | JavaScript · TypeScript · Bash · YAML |
+| **Docs & sites** | Docusaurus, MkDocs, Markdown / MDX |
+| **API docs** | OpenAPI (Swagger), Redoc, Scalar, Postman, Schemathesis, Prism |
+| **Kubernetes** | Kubernetes, OpenShift, Helm, helm-docs, Artifact Hub, Docker |
+| **Cloud & IaC** | AWS, Azure, GCP, Terraform |
+| **CI/CD** | GitHub Actions, Jenkins, Azure DevOps, Git, Bash |
+| **AI in the pipeline** | Claude, ChatGPT - agents that review, not just generate |
+| **Testing** | Playwright, Schemathesis, link and style checks |
+| **Video** | DaVinci Resolve, YouTube, Google Analytics |
+| **Languages** | JavaScript, TypeScript, Bash, YAML |
 | **Editor** | Neovim - custom LSP and YAML workflow |
-
----
-
-## 🏢 Domain experience
-
-- **GIS ecosystems** - VertiGIS Networks Suite, Studio Web, Workflows, and Attribute Forms.
-- **Financial APIs** - QuickBooks, Xero.
 
 ---
 
