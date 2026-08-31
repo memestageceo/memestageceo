@@ -1,4 +1,7 @@
-<img src="https://github.com/user-attachments/assets/388b3d6d-c1f1-4897-96e0-5d5ba3446eff" alt="Banner" width="100%">
+<p align="center">
+  <img src="assets/pipeline.svg" width="100%"
+       alt="Documentation pipeline: author, validate, assist, generate, publish">
+</p>
 
 <h1 align="center">Aditya Raj</h1>
 
@@ -48,7 +51,7 @@ the full lifecycle, not just the writing.
 
 ### The pipeline
 
-Documentation runs through CI the same way an application does:
+The stages above, in detail — documentation runs through CI the same way an application does:
 
 | Stage | What happens |
 | :-- | :-- |
