@@ -1,50 +1,117 @@
-![Banner](https://github.com/user-attachments/assets/388b3d6d-c1f1-4897-96e0-5d5ba3446eff)
+<img src="https://github.com/user-attachments/assets/388b3d6d-c1f1-4897-96e0-5d5ba3446eff" alt="Banner" width="100%">
 
-# Aditya
+<h1 align="center">Aditya Raj</h1>
 
-**Technical Writer • Documentation Engineer • DevOps Enthusiast**
+<p align="center">
+  <strong>Technical Writer</strong> · <strong>Documentation Engineer</strong> · <strong>DevOps</strong>
+</p>
 
-I bridge the gap between complex code and developer success. My focus is improving **Developer Experience (DX)** through automated documentation pipelines, robust API references, and technical storytelling.
+<p align="center">
+  <a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
+    <img alt="Certified Kubernetes Administrator" src="https://img.shields.io/badge/CKA-Certified%20Kubernetes%20Administrator-326CE5?style=flat-square&logo=kubernetes&logoColor=white">
+  </a>
+  <a href="https://www.youtube.com/@memestagestartup">
+    <img alt="YouTube" src="https://img.shields.io/badge/YouTube-Technical%20walkthroughs-FF0000?style=flat-square&logo=youtube&logoColor=white">
+  </a>
+  <a href="https://github.com/memestageceo">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/memestageceo?style=flat-square&logo=github&label=Follow">
+  </a>
+</p>
 
-<a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url](https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
-  <img src="https://raw.githubusercontent.com/memestageceo/memestageceo/main/assets/cka.png"
-       alt="Certified Kubernetes Administrator (CKA)"
-       width="150">
-</a>
+I treat documentation as part of the product. That means shipping docs the same way we ship
+code — versioned in the repo, validated in CI, and published automatically — so that developers
+can adopt, integrate, and operate software without guesswork.
 
-## 🚀 Core Expertise
+---
 
-### Documentation Engineering
-- **Architecture:** Designing scalable doc sets using Docusaurus and MkDocs.
-- **API Strategy:** High-fidelity references using **OpenAPI (Swagger)**, Redoc, and Scalar.
-- **Testing & Mocking:** Ensuring accuracy with Schemathesis and Prism.
-- **Docs-as-Code:** Building CI/CD automation pipelines via GitHub Actions.
+## At a glance
 
-### DevOps & Infrastructure
-- **Orchestration:** Managing workloads with **Kubernetes**, Helm, and Docker.
-- **Cloud:** Transitioning into AWS architecture and cloud-native workflows.
-- **Automation:** Writing custom Bash scripts and GitHub Actions to eliminate manual toil.
+|  |  |
+| :-- | :-- |
+| 🧭 **Focus** | Developer Experience (DX) through documentation |
+| 📚 **Day to day** | Owning documentation for enterprise software, end to end |
+| ⚙️ **Automation** | Docs-as-code CI/CD — validate, generate, and publish on every merge |
+| ☸️ **Infrastructure** | Kubernetes, OpenShift, Helm, AWS / Azure / GCP |
+| 🎥 **Content** | Deployment walkthroughs and DevOps guides on YouTube |
 
-## 🛠 Tech Stack
-- **Languages:** JavaScript, TypeScript, Bash
-- **DevOps:** Kubernetes, Docker, Helm, GitHub Actions
-- **Editor:** Neovim (Personalized LSP/YAML workflow)
-- **API/Docs:** OpenAPI, Docusaurus, MkDocs, Schemathesis, Prism
+---
 
-## 🏢 Platform Experience
-Deep technical knowledge in documenting and integrating with:
-- **GIS Ecosystems:** VertiGIS Networks Suite, Studio Web, Workflows, and Attribute Forms.
-- **Financial APIs:** QuickBooks, Xero.
+## 📚 Documentation engineering
 
-## 🏗 What I’m Building & Learning
-- **Current Focus:** Deep-diving into Kubernetes internals and AWS Solutions Architecture.
-- **Side Projects:** Developing OpenAPI documentation portals and CLI workflow tutorials.
-- **Content:** Creating technical walkthroughs and DevOps guides on YouTube.
+I own documentation for enterprise software from information architecture through release —
+the full lifecycle, not just the writing.
 
-## 🧠 Philosophy
-Documentation is not an afterthought; it is a core feature of the product. Clear docs make software easier to adopt, integrate, and maintain.
+- **Doc set architecture** — scalable, versioned documentation with **Docusaurus** and **MkDocs**.
+- **API references** — high-fidelity specs with **OpenAPI (Swagger)**, rendered via **Redoc** and **Scalar**.
+- **Release documentation** — release notes, upgrade paths, and migration guides that survive contact with real customers.
+- **Docs-as-code** — docs live beside the source, move through pull requests, and get reviewed like code.
 
-## 🔗 Connect With Me
-- **GitHub:** [github.com/memestageceo](https://github.com/memestageceo)
-- **YouTube:** [youtube.com/@memestagestartup](https://www.youtube.com/@memestagestartup)
-- **Portfolio:** Check my pinned repositories for featured DocEng projects.
+### The pipeline
+
+Documentation runs through CI the same way an application does:
+
+| Stage | What happens |
+| :-- | :-- |
+| **Author** | Markdown/MDX in the product repo, reviewed through pull requests. |
+| **Validate** | Every PR is checked for broken links, style violations, and drift from the API spec — contract testing with **Schemathesis**, mocked examples with **Prism**. |
+| **Assist** | AI agents run in the pipeline to draft updates from code diffs, flag pages that have gone stale, and review changes against the style guide. |
+| **Generate** | Reference content is generated, never hand-copied — **helm-docs** for chart values, OpenAPI for endpoints. |
+| **Publish** | On merge, sites build and deploy, and chart docs ship to **Artifact Hub**. |
+
+The point is simple: if documentation can go out of date silently, it will. The pipeline makes it fail loudly instead.
+
+---
+
+## ☸️ Cloud, Kubernetes & Helm
+
+- **Deployment documentation** for **AWS**, **Azure**, and **GCP** — install, configure, scale, troubleshoot.
+- **Cluster platforms** — deployment and operations guides for **Kubernetes** and **OpenShift**.
+- **Helm** — chart documentation with values references generated by **helm-docs** and published to **Artifact Hub**.
+- **Automation** — GitHub Actions and Bash to remove the manual steps between a merge and a published page.
+
+---
+
+## 🎥 Video & developer education
+
+Some things are faster to show than to describe. Alongside written docs I produce screen-recorded
+walkthroughs — cluster deployments, Helm releases, and DevOps workflows — so teams can watch the
+happy path once before running it themselves.
+
+▶️ [youtube.com/@memestagestartup](https://www.youtube.com/@memestagestartup)
+
+---
+
+## 🧰 Toolbox
+
+| Area | Tools |
+| :-- | :-- |
+| **Docs & sites** | Docusaurus, MkDocs, Markdown / MDX |
+| **API docs** | OpenAPI (Swagger), Redoc, Scalar, Schemathesis, Prism |
+| **Kubernetes** | Kubernetes, OpenShift, Helm, helm-docs, Artifact Hub, Docker |
+| **Cloud** | AWS, Azure, GCP |
+| **CI/CD** | GitHub Actions, Bash, AI agents in CI |
+| **Languages** | JavaScript, TypeScript, Bash, YAML |
+| **Editor** | Neovim — custom LSP and YAML workflow |
+
+---
+
+## 🏢 Domain experience
+
+- **GIS ecosystems** — VertiGIS Networks Suite, Studio Web, Workflows, and Attribute Forms.
+- **Financial APIs** — QuickBooks, Xero.
+
+---
+
+## 🏗 Currently
+
+- Going deeper into **Kubernetes internals** and **AWS Solutions Architecture**.
+- Building OpenAPI documentation portals and CLI workflow tutorials.
+- Expanding the use of agents in documentation pipelines — reviewing, not just generating.
+
+---
+
+## 🔗 Connect
+
+- **YouTube** — [@memestagestartup](https://www.youtube.com/@memestagestartup)
+- **GitHub** — [@memestageceo](https://github.com/memestageceo)
+- **Work** — pinned repositories below cover the featured documentation-engineering projects.
