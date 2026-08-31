@@ -6,6 +6,12 @@
 
 I bridge the gap between complex code and developer success. My focus is improving **Developer Experience (DX)** through automated documentation pipelines, robust API references, and technical storytelling.
 
+<a href="https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url](https://www.credly.com/badges/ecbcdd60-3860-4315-ab52-29bc04739940/public_url">
+  <img src="https://raw.githubusercontent.com/memestageceo/memestageceo/main/assets/cka.png"
+       alt="Certified Kubernetes Administrator (CKA)"
+       width="150">
+</a>
+
 ## 🚀 Core Expertise
 
 ### Documentation Engineering
